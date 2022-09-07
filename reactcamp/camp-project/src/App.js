@@ -1,12 +1,17 @@
+import { Container } from 'semantic-ui-react';
 import './App.css';
 import Dashboard from './layouts/Dashboard';
-// import 'semantic-ui-css/semantic.min.css';
+import Navi from './layouts/Navi';
+// import 'semantic-ui-css/semantic.min.css'; // buga giriyor html de hallettim
 
-function App() { 
+function App() {
   return (
     <div className="App">
-      <Dashboard/>
-      </div>
+      <Navi/>
+      <Container className="main">
+        <Dashboard />
+      </Container>
+    </div>
   );
 }
 

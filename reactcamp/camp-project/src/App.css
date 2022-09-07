@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+/*semantic UI demek ui
+main. classname*/
+.ui.main.container{ 
+  margin-top: 3em;
+}
 /*
 .App-logo {
   height: 40vmin;
