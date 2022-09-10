@@ -10,7 +10,7 @@ export default function Categories() {
                 <a className="item">
                     Messages
                 </a>
-                <a class="item">
+                <a className="item">
                     Friends
                 </a>
             </div>

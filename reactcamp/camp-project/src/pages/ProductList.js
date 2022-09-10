@@ -8,11 +8,10 @@ export default function ProductList() {
     const [name, setName] = useState('');
     const [demoEffect, setDemoEffect] = useState(null);
     let productService = new ProductService()
-    
-    useEffect(() => {
-        productService.getProducts().then(result => setProducts(result.data.data))
 
-    })
+    useEffect(() => {
+        productService.getProducts().then(result => setProducts(result.data.data)).catch(console.log("buraya girdi"))
+    },[])
     useEffect(() => {
 
         productService.getProductByName(name).then(result => setDemoEffect(result.data.data))
