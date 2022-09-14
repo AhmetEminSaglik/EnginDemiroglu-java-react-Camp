@@ -3,15 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {Provider} from "react-redux"
 // import { BrowserRouter } from 'react-router-dom';
 // import 'semantic-ui-css/semantic.min.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-root.render(
+//2:27:00  de provider kisminda kaldim artik sadece izlicem.
+  <Provider> 
+    <App />
+  </Provider>
   // <React.StrictMode>
   // <BrowserRouter>
-    <App />
+
   // </BrowserRouter>
   // </React.StrictMode
 );
