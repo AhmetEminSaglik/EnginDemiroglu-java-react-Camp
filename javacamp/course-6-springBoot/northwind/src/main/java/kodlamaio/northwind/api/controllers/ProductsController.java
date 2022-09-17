@@ -27,13 +27,13 @@ public class ProductsController {
 
     private ProductService productService;
 
-    @GetMapping("/getall")
+    @GetMapping("")
     public DataResult<List<Product>> getAll() {
 //        return new DataResult<Product>(productService.getAll(), true,"All Products retrived");
         return productService.getAll();
     }
 
-    @PostMapping("/add")
+    @PostMapping("")
     public Result add(@RequestBody Product product) { // body degerlerini gonderecek
         return productService.add(product);
     }
